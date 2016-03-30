@@ -11,7 +11,7 @@
 <ul>
   {{#each model as |post|}}
     <li>{{post.title}}
-        <!-- {{edit-post post=post edit="edit"}} -->
+        {{edit-entry post=post editEntry="editEntry"}}
         <button class="btn btn-danger btn-xs" {{action 'deleteEntry' post}}>Delete</button>
     </li>
   {{/each}}
