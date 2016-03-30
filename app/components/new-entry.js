@@ -7,10 +7,12 @@ export default Ember.Component.extend({
       this.set('newBlogPost', true);
     },
     submitEntry(){
+      var date = new Date();
+      date = date.toString().substring(0,15);
       var blogParams = {
         title: this.get('title'),
         author: this.get('author'),
-        date: new Date(),
+        date: date,
         body: this.get('body'),
         image: this.get('image')
       };
