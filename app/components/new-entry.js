@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       var blogParams = {
         title: this.get('title'),
         author: this.get('author'),
-        date: this.get('date'),
+        date: new Date(),
         body: this.get('body'),
         image: this.get('image')
       };

@@ -15,3 +15,8 @@
   width: 100%;
   max-height: 600px;
 }
+
+#submitNewComment {
+  margin-bottom: 20px;
+  margin-top: 50px;
+}

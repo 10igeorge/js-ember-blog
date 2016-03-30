@@ -5,8 +5,11 @@
 <img class="postImage" src={{model.posts.image}}>
 <hr>
 <p>{{model.posts.body}}</p>
+
+
 {{new-comment submitComment="submitComment" postId=model.posts.id post=model.posts}}
 {{#each model.posts.comments as |comment|}}
   {{comment-list comment=comment}}
   <button class="btn btn-danger btn-xs" {{action 'deleteComment' comment}}>Delete</button>
+  <hr>
 {{/each}}
