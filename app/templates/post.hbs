@@ -1,9 +1,12 @@
-<h1>{{model.title}}</h1>
+<h1>{{model.posts.title}}</h1>
 
-<h5>By: {{model.author}}</h5>
-<p>Created: {{model.date}}</p>
-<img class="postImage" src={{model.image}}>
+<h5>By: {{model.posts.author}}</h5>
+<p>Created: {{model.posts.date}}</p>
+<img class="postImage" src={{model.posts.image}}>
 <hr>
 
-<p>{{model.body}}</p>
-{{new-comment submitComment="submitComment" id=model.id}}
+<p>{{model.posts.body}}</p>
+{{new-comment submitComment="submitComment" postId=model.posts.id}}
+{{#each model.comments as |comment|}}
+  {{comment-list comment=comment}}
+{{/each}}
