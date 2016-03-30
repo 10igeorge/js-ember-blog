@@ -14,6 +14,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         date: date,
         body: this.get('body'),
+        preview: this.get('body').substring(0,500),
         image: this.get('image')
       };
       this.set('newBlogPost', false);
