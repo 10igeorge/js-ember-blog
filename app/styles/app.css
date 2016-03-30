@@ -1,3 +1,17 @@
-.postImage img {
+.postImage {
   width: 700px;
+}
+
+.postImage img{
+  width: 700px;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron img {
+  width: 100%;
+  max-height: 600px;
 }

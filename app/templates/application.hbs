@@ -1,39 +1,39 @@
-<header class="jumbotron">
-  <h1>Vegan Foodie Blog</h1>
+<header>
+  <div class="jumbotron">
+  {{#link-to 'index'}}<img src="/assets/images/header.jpg">{{/link-to}}
+  </div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        {{#link-to 'index'}}<a class="navbar-brand" href="#">BananaSauce</a>{{/link-to}}
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">{{#link-to 'about'}}About<span class="sr-only">(current)</span>{{/link-to}}</li>
+          <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
+          {{#bs-dropdown tagName="li"}}
+            {{#bs-dropdown-toggle}}About <span class="caret"></span>{{/bs-dropdown-toggle}}
+            {{#bs-dropdown-menu}}
+              <li>{{#link-to 'about'}}About us{{/link-to}}</li>
+              <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+              <li>{{#link-to 'admin'}}Admin{{/link-to}}</li>
+            {{/bs-dropdown-menu}}
+          {{/bs-dropdown}}
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 </header>
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {{#link-to 'index'}}<a class="navbar-brand" href="#">BananaSauce</a>{{/link-to}}
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active">{{#link-to 'about'}}About<span class="sr-only">(current)</span>{{/link-to}}</li>
-        <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
-        {{#bs-dropdown tagName="li"}}
-          {{#bs-dropdown-toggle}}About <span class="caret"></span>{{/bs-dropdown-toggle}}
-          {{#bs-dropdown-menu}}
-            <li>{{#link-to 'about'}}About us{{/link-to}}</li>
-            <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
-            <li>{{#link-to 'admin'}}Admin{{/link-to}}</li>
-          {{/bs-dropdown-menu}}
-        {{/bs-dropdown}}
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
 
 
 <div class="container">
