@@ -9,7 +9,7 @@ export default Ember.Route.extend({
     submitComment(params){
       var newComment = this.store.createRecord('comment', params);
       newComment.save();
-      this.transitionTo('post/'+params.post_id);
+      this.transitionTo('/post/'+params.id);
     }
   }
 });
