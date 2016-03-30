@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         body: this.get('body'),
         image: this.get('image')
       };
-      this.set('newBlogPost', false),
+      this.set('newBlogPost', false);
       this.sendAction('submitEntry', blogParams);
     }
   }

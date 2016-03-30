@@ -12,12 +12,12 @@ export default Ember.Component.extend({
         post: this.get('post'),
         name: this.get('name'),
         email: this.get('email'),
-        date: this.get('date'),
+        date: new Date(),
         text: this.get('text')
       };
       console.log(this.get('content'));
       console.log(this);
-      this.set('newComment', false),
+      this.set('newComment', false);
       this.sendAction('submitComment', params);
     }
   }
