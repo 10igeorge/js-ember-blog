@@ -1,1 +1,33 @@
-{{yield}}
+{{#if newComment}}
+  <h1>Add Comment - be heard, your voice... it matters</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          {{input value=name id="name"}}
+        </div>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          {{input value=name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          {{input value=email id="email"}}
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date:</label>
+          {{input value=date id="date"}}
+        </div>
+
+        <div class="form-group">
+          <label for="text">Comment:</label>
+          {{input value=text id="text"}}
+        </div>
+        <button {{action 'submitComment'}}>Submit</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'showCommentForm'}}>New Comment</button>
+{{/if}}
