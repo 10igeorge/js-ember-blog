@@ -9,6 +9,7 @@ export default Ember.Component.extend({
     submitComment(){
       var params = {
         postId: this.get('postId'),
+        post: this.get('post'),
         name: this.get('name'),
         email: this.get('email'),
         date: this.get('date'),
