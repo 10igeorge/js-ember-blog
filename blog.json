@@ -1,4 +1,5 @@
 { "posts": [{
+    "id": 1,
     "title": "Veruca Salt",
     "author": "San Francisco",
     "date": "Estate",

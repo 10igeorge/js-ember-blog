@@ -1,1 +1,18 @@
+<h1>Administrator</h1>
+
 {{new-entry submitEntry="submitEntry"}}
+
+<br><br>
+
+
+
+
+<h4>Posts</h4>
+<ul>
+  {{#each model as |post|}}
+    <li>{{post.title}}
+        <!-- {{edit-post post=post edit="edit"}} -->
+        <button class="btn btn-danger btn-xs" {{action 'deleteEntry' post}}>Delete</button>
+    </li>
+  {{/each}}
+</ul>
