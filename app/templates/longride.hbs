@@ -1,0 +1,6 @@
+{{#each model as |post|}}
+  {{#if (searchPosts post 'longRide')}}
+    {{post-tile post=post}}
+    <hr>
+  {{/if}}
+{{/each}}

@@ -10,6 +10,10 @@ Router.map(function() {
   this.route('contact');
   this.route('admin');
   this.route('post', {path: '/post/:post_id'});
+  this.route('shortride');
+  this.route('longride');
+  this.route('shorthike');
+  this.route('longhike');
 });
 
 export default Router;

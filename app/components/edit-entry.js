@@ -11,6 +11,7 @@ export default Ember.Component.extend({
         title: this.get('title'),
         author: this.get('author'),
         date: this.get('date'),
+        tag: this.get('dropdown'),
         body: this.get('body'),
         image: this.get('image')
       };

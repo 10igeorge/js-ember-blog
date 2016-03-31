@@ -17,7 +17,7 @@ export default Ember.Route.extend({
       });
       this.transitionTo('/post/'+params.postId);
     },
-    deleteComment(comment, post){
+    deleteComment(comment){
       if(confirm("Delete this comment?")){
         comment.destroyRecord();
         this.transitionTo('/post/'+comment.postId);

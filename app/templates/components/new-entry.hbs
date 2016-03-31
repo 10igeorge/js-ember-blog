@@ -13,6 +13,15 @@
         </div>
 
         <div class="form-group">
+        {{#x-select value=dropdown}}
+          {{#x-option value="shortRide"}}Short ride{{/x-option}}
+          {{#x-option value="longRide"}}Long ride{{/x-option}}
+          {{#x-option value="shortHike"}}Short hike{{/x-option}}
+          {{#x-option value="longHike"}}Long hike{{/x-option}}
+        {{/x-select}}
+        </div>
+
+        <div class="form-group">
           <label for="body">Body</label><br>
           {{textarea value=body id="body" rows="20" cols="120"}}
         </div>
