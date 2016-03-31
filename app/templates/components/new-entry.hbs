@@ -18,7 +18,8 @@
         </div>
 
         <div class="form-group">
-          <label for="image">Image:</label>
+          <label for="image">Upload Image:</label>
+          {{image-upload url="/upload"}}
           {{input value=image id="image"}}
         </div>
         <button class="btn btn-primary"{{action 'submitEntry'}}>Submit</button>

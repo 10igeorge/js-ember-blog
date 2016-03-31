@@ -17,10 +17,10 @@ export default Ember.Route.extend({
       });
       this.transitionTo('/post/'+params.postId);
     },
-    deleteComment(comment){
+    deleteComment(comment, post){
       if(confirm("Delete this comment?")){
         comment.destroyRecord();
-        this.transitionTo('/post/'+params.postId);
+        this.transitionTo('/post/'+comment.postId);
       }
     }
   }
