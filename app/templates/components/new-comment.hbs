@@ -1,24 +1,22 @@
 {{#if newComment}}
-  <h1>Add Comment - be heard, your voice... it matters</h1>
     <div>
       <form>
         {{input value=postId type="hidden"}}
-        {{postId}}
         <div class="form-group">
-          <label for="name">Your Name:</label>
+          <label for="name">Your Name:</label><br>
           {{input value=name id="name"}}
         </div>
 
         <div class="form-group">
-          <label for="email">Email:</label>
+          <label for="email">Email:</label><br>
           {{input value=email id="email"}}
         </div>
 
         <div class="form-group">
-          <label for="text">Comment:</label>
-          {{input value=text id="text"}}
+          <label for="text">Comment:</label><br>
+          {{textarea value=text id="text" cols="60" rows="10"}}
         </div>
-        <button {{action 'submitComment'}}>Submit</button>
+        <button class="btn btn-primary btn-sm" {{action 'submitComment'}}>Submit</button><br><br><hr>
       </form>
     </div>
 {{else}}

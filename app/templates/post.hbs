@@ -4,7 +4,7 @@
 <p>Created: {{model.posts.date}}</p>
 <img class="postImage" src={{model.posts.image}}><br><br><br>
 {{model.posts.body}}
-
+<hr>
 
 {{new-comment submitComment="submitComment" postId=model.posts.id post=model.posts}}
 {{#each model.posts.comments as |comment|}}
