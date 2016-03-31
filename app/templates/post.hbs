@@ -3,7 +3,6 @@
 <h5>By: {{model.posts.author}}</h5>
 <p>Created: {{model.posts.date}}</p>
 <img class="postImage" src={{model.posts.image}}>
-<hr>
 <p>{{model.posts.body}}</p>
 
 
@@ -11,5 +10,4 @@
 {{#each model.posts.comments as |comment|}}
   {{comment-list comment=comment}}
   <button class="btn btn-danger btn-xs" {{action 'deleteComment' comment}}>Delete</button>
-  <hr>
 {{/each}}
