@@ -3,27 +3,27 @@
     <div>
       <form>
         <div class="form-group">
-          <label for="title">Title:</label>
+          <label for="title">Title:</label><br>
           {{input value=title id="title"}}
         </div>
 
         <div class="form-group">
-          <label for="author">Author:</label>
+          <label for="author">Author:</label><br>
           {{input value=author id="author"}}
         </div>
 
         <div class="form-group">
-          <label for="body">Body:</label>
-          {{input value=body id="body"}}
+          <label for="body">Body</label><br>
+          {{textarea value=body id="body" rows="20" cols="120"}}
         </div>
 
         <div class="form-group">
           <label for="image">Image:</label>
           {{input value=image id="image"}}
         </div>
-        <button {{action 'submitEntry'}}>Submit</button>
+        <button class="btn btn-primary"{{action 'submitEntry'}}>Submit</button>
       </form>
     </div>
 {{else}}
-    <button {{action 'showEntryForm'}}>New Entry</button>
+    <button class="btn btn-primary" {{action 'showEntryForm'}}>New Entry</button>
 {{/if}}

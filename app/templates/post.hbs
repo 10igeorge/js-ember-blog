@@ -2,12 +2,13 @@
 
 <h5>By: {{model.posts.author}}</h5>
 <p>Created: {{model.posts.date}}</p>
-<img class="postImage" src={{model.posts.image}}>
-<p>{{model.posts.body}}</p>
+<img class="postImage" src={{model.posts.image}}><br><br><br>
+{{model.posts.body}}
 
 
 {{new-comment submitComment="submitComment" postId=model.posts.id post=model.posts}}
 {{#each model.posts.comments as |comment|}}
   {{comment-list comment=comment}}
+  <button class="btn btn-info btn-xs">Reply</button>
   <button class="btn btn-danger btn-xs" {{action 'deleteComment' comment}}>Delete</button>
 {{/each}}

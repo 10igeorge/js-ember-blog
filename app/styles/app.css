@@ -1,4 +1,10 @@
+.container {
+  width: 1000px;
+}
+
 .wrapper{
+  align: top;
+  height: auto;
   position: relative;
   width: 1000px;
   margin: 0 auto;
@@ -6,10 +12,17 @@
   box-shadow: 0px 0px 19px rgba(26, 26, 26, 0.1);
   -moz-box-shadow: 0px 0px 19px rgba(26, 26, 26, 0.1);
   -webkit-box-shadow: 0px 0px 19px rgba(26, 26, 26, 0.1);
+  min-height: 100%;
 }
 
 body {
   background-color: hsla(133, 7%, 56%, 0.2);
+  font-family: 'Molengo', sans-serif;
+}
+
+.logo {
+  font-family: 'Fredericka the Great';
+  font-size: 42px;
 }
 
 .postImage {
@@ -18,6 +31,10 @@ body {
 
 .postImage img{
   width: 700px;
+  max-height: 395px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .jumbotron {
@@ -33,4 +50,24 @@ body {
 #submitNewComment {
   margin-bottom: 20px;
   margin-top: 50px;
+}
+
+#footer-wrapper {
+  margin-top: 100px;
+}
+
+.admin {
+  float: right;
+}
+
+#edit, #delete {
+  float: right;
+}
+
+.listPosts {
+  width: 300px;
+}
+
+#listPostTitle {
+  float:left;
 }

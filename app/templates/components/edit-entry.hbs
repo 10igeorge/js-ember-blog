@@ -26,9 +26,9 @@
           <label for="image">Image:</label>
           {{input value=image id="image" placeholder=post.image}}
         </div>
-        <button {{action 'editEntry' post}}>Submit</button>
+        <button class="btn btn-primary btn-sm" {{action 'editEntry' post}}>Submit</button>
       </form>
     </div>
 {{else}}
-    <button {{action 'editEntryForm'}}>Edit Entry</button>
+    <button id="edit" class="btn btn-info btn-xs" {{action 'editEntryForm'}}>Edit</button>
 {{/if}}
